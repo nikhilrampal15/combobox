@@ -1,3 +1,8 @@
+## Developer Choices
+
+I designed this combobox using the latest technologies using React and Typescript and Styled components. I think this development pattern is easy to read and debug and the create-react-app is a great starter boilerplate.
+![](https://i.imgur.com/QSUOlqY.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
