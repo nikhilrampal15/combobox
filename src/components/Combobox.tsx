@@ -57,8 +57,14 @@ const Combobox = ({ options }: Props) => {
     useClickOutside(ref, () => setOpen(false))
 
     const handleSelect = (item:string) => {
-        setSelectedfruit(item)
+        setSelectedfruit(item);
         setOpen(false)
+    }
+
+    const handleReset = () => {
+        setOpen(!open); 
+        setInput('');
+        setSelectedfruit('');
     }
 
     return (
@@ -74,7 +80,7 @@ const Combobox = ({ options }: Props) => {
             :
             <Closedwrapper>
                 <Inputwrapperclosed>
-                    <Inputclosed placeholder='Choose a Fruit:' onClick={ () => setOpen(!open)} value={selectedFruit}/>
+                    <Inputclosed placeholder='Choose a Fruit:' onClick={handleReset} value={selectedFruit}/>
                     <Chevrondown />
                 </Inputwrapperclosed>
             </Closedwrapper>
